@@ -11,7 +11,7 @@ import { CrmData } from './crm/entities/crm-data.entity';
       port: 1433,
       username: 'sa',
       password: '12345',
-      database: 'crm-database', // ช่วงแรกใช้ master ไปก่อน เพราะยังไม่ได้ระบุ
+      database: 'crm-database', // ช่วงแรกใช้ crm-database ไปก่อน เพราะยังไม่ได้ระบุ
       entities: [CrmData],
       synchronize: true,
       options: {
