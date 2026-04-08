@@ -1,0 +1,39 @@
+{
+  "name": "crm-data-ingest",
+  "version": "1.0.0",
+  "description": "NestJS app for ingesting CRM data from Kafka to MSSQL",
+  "private": true,
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "test:produce": "node scripts/producer.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^11.1.18",
+    "@nestjs/microservices": "^11.1.18",
+    "@nestjs/platform-express": "^11.1.18",
+    "@nestjs/typeorm": "^11.0.1",
+    "kafkajs": "^2.2.4",
+    "mssql": "^12.2.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.3.2",
+    "@nestjs/schematics": "^11.0.10",
+    "@nestjs/testing": "^11.1.18",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.3.1",
+    "ts-loader": "^9.4.3",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.1.3"
+  }
+}
